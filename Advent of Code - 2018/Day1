@@ -1,0 +1,9 @@
+function getFrequency(A){
+    let finalFreq = 0
+
+    A.forEach((element) => {
+        finalFreq += element;
+    })
+
+    console.log(finalFreq)
+}
