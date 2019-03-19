@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: #102027; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #102027 0%, #1b3641 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #102027 0%,#1b3641 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #102027 0%,#1b3641 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    color: #fff;
+}
+
+#solution{
+    background: #102027;
+}
+pre{
+    color: #e83e8c !important;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+hr {
+    border-color: #e4e4e4
+}
+
+#problem {
+    max-height: 500px;
+    overflow-y: scroll;
+}
