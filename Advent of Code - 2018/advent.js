@@ -3,12 +3,14 @@
 // Just defining some simple jquery objects in order to save time
 let $day = $('#day'), $dayNum = $('#dayNum'), $prob = $('#problem'), $solution = $('#solution'), $input = $('#inputFile'), $answer = $('#answer')
 $(document).ready(function(){
-    updateDay(1)
+    updateDay('1-1')
 })
 
 // Set up listeners
 $day.on('change', function(){
     updateDay($(this).val());
+    $input.val('')
+    $answer.html('')
 })
 
 // Do all the logic associated to a day change
@@ -58,5 +60,7 @@ function readSolution(daySelected){
 function processInput(){
     doProblem($input.val()).then(function(value){
         $answer.html(value)
+    }).catch(function(err){
+        $answer.html(err)
     })
 }
